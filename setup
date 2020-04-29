@@ -1,14 +1,18 @@
 #!/usr/bin/env bash
 
-# This script sets up the needed symbolic links
-# Warning: It will override previously existing files
+# Warning: This script will override files!
 
 if [[ "$0" != "./setup" ]]; then
   echo "Error: Must be called from within git repository"
   exit 1
 fi
 
+# Sets up the symbolic links
+
 SUBMODULES=$PWD/submodules
 
 rm -rf ~/.emacs.d
 ln -s $SUBMODULES/.emacs.d/ ~/.emacs.d
+
+rm -f ~/.gitignore_global
+ln -s $PWD/.gitignore_global ~/.gitignore_global
