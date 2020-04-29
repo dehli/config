@@ -6,10 +6,19 @@ export AWS_DEFAULT_REGION=$AWS_REGION
 export EDITOR="emacs"
 export VISUAL="emacs"
 
+# History settings
+HISTCONTROL=ignoreboth
+HISTSIZE=1000
+HISTFILESIZE=2000
+
 # Operating system
 uname="$(uname)"
-if [[ $uname = "Linux" ]]; then
+if [ $uname = "Linux" ]; then
    export OS_LINUX=true
 elif [ $uname = "Darwin" ]; then
-    export OS_MAC=true
+   export OS_MAC=true
+fi
+
+if [ $OS_MAC ]; then
+   export BASH_SILENCE_DEPRECATION_WARNING=1
 fi
