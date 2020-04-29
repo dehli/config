@@ -1,0 +1,15 @@
+# AWS Configuration
+export AWS_REGION=us-east-1
+export AWS_DEFAULT_REGION=$AWS_REGION
+
+# Editor Configuration
+export EDITOR="emacs"
+export VISUAL="emacs"
+
+# Operating system
+uname="$(uname)"
+if [[ $uname = "Linux" ]]; then
+   export OS_LINUX=true
+elif [ $uname = "Darwin" ]; then
+    export OS_MAC=true
+fi

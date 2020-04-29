@@ -1,0 +1,2 @@
+source $CONFIG_HOME/shell/environment_variables
+source $CONFIG_HOME/shell/aliases
