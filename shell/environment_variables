@@ -3,8 +3,8 @@ export AWS_REGION=us-east-1
 export AWS_DEFAULT_REGION=$AWS_REGION
 
 # Editor Configuration
-export EDITOR="emacs"
-export VISUAL="emacs"
+export EDITOR="emacs -nw"
+export VISUAL="emacs -nw"
 
 # History settings
 HISTCONTROL=ignoreboth
