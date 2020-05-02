@@ -9,11 +9,13 @@ fi
 # Sets up the symbolic links
 SUBMODULES=$PWD/submodules
 
-rm -rf ~/.emacs.d
-ln -s $SUBMODULES/.emacs.d/ ~/.emacs.d
+link() {
+  rm -rf $2
+  ln -s $1 $2
+}
 
-rm -f ~/.tmux.conf
-ln -s $PWD/tmux.conf ~/.tmux.conf
+link $SUBMODULES/.emacs.d/ ~/.emacs.d
+link $PWD/tmux.conf ~/.tmux.conf
 
 # Git configuration
 git config --global core.excludesfile $PWD/.gitignore_global
