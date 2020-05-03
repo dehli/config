@@ -1,5 +1,4 @@
 alias emacs="emacs -nw"
-alias ll="ls -alF"
 
 if [ $OS_LINUX ]; then
    alias pbcopy="xclip -selection clipboard"
