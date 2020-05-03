@@ -6,10 +6,11 @@ export AWS_DEFAULT_REGION=$AWS_REGION
 export EDITOR="emacs -nw"
 export VISUAL="emacs -nw"
 
-# History settings
-HISTCONTROL=ignoreboth
-HISTSIZE=1000
-HISTFILESIZE=2000
+# ZSH Configuration
+ZSH_THEME="robbyrussell"
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
+plugins=(git)
 
 # Operating system
 uname="$(uname)"
@@ -17,8 +18,4 @@ if [ $uname = "Linux" ]; then
    export OS_LINUX=true
 elif [ $uname = "Darwin" ]; then
    export OS_MAC=true
-fi
-
-if [ $OS_MAC ]; then
-   export BASH_SILENCE_DEPRECATION_WARNING=1
 fi
