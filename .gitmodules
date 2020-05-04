@@ -1,6 +1,6 @@
 [submodule "submodules/.emacs.d"]
 	path = submodules/.emacs.d
-	url = git@github.com:dehli/.emacs.d.git
+	url = ../.emacs.d.git
 [submodule "submodules/.atom"]
 	path = submodules/.atom
-	url = git@github.com:dehli/.atom.git
+	url = ../.atom.git
