@@ -7,7 +7,7 @@ Clone this repo.
 git submodule init
 git submodule update --recursive
 
-# Add the following to your .bash_profile or .bashrc
+# Add the following to your .zshrc
 export CONFIG_HOME=$HOME/Config
 source $CONFIG_HOME/shell/rc
 
