@@ -29,6 +29,7 @@ if [[ $OS_LINUX ]]; then
 
 elif [[ $OS_MAC ]]; then
   brew install cocoapods
+  brew install github/gh/gh
   brew install python3
 
   brew cask install docker
