@@ -20,3 +20,6 @@ link $PWD/tmux.conf ~/.tmux.conf
 # Git configuration
 git config --global core.excludesfile $PWD/.gitignore_global
 git config --global alias.lola "log --graph --decorate --oneline --all"
+git config --global alias.st "status"
+git config --global user.name "Christian Paul Dehli"
+git config --global user.email github@deh.li
