@@ -17,6 +17,7 @@ link() {
 link $SUBMODULES/.emacs.d/ ~/.emacs.d
 link $PWD/tmux.conf ~/.tmux.conf
 link $PWD/packages/iTerm/profiles.json "$HOME/Library/Application Support/iTerm2/DynamicProfiles/profiles.json"
+link $PWD/packages/joker.edn ~/.joker
 
 # Git configuration
 git config --global core.excludesfile $PWD/.gitignore_global
