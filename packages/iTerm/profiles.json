@@ -340,7 +340,7 @@
                 "Red Component" : 0,
                 "Blue Component" : 0
             },
-            "Screen" : -1,
+            "Screen" : -2,
             "HotKey Characters Ignoring Modifiers" : "=",
             "Non Ascii Font" : "Monaco 12",
             "Ansi 13 Color" : {

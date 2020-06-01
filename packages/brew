@@ -49,6 +49,9 @@ elif [[ $OS_MAC ]]; then
   brew cask install visual-studio-code
   brew cask install zoomus
 
+  brew tap homebrew/cask-drivers
+  brew cask install logitech-options
+
   brew tap homebrew/cask-fonts
   brew cask install font-hack
   brew cask install font-fira-code
