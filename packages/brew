@@ -29,6 +29,7 @@ if [[ $OS_LINUX ]]; then
   brew install python
 
 elif [[ $OS_MAC ]]; then
+  brew install awscli
   brew install cocoapods
   brew install github/gh/gh
   brew install libtool
@@ -43,6 +44,7 @@ elif [[ $OS_MAC ]]; then
   brew cask install java
   brew cask install keka
   brew cask install keybase
+  brew cask install minecraft
   brew cask install shiftit
   brew cask install slack
   brew cask install steam
