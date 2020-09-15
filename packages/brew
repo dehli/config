@@ -12,6 +12,7 @@ fi
 brew update
 
 # Install common packages
+brew install borkdude/brew/babashka
 brew install candid82/brew/joker
 brew install clojure
 brew install cmake
@@ -40,14 +41,17 @@ elif [[ $OS_MAC ]]; then
   brew cask install 1password
   brew cask install atom
   brew cask install docker
+  brew cask install epic-games
   brew cask install firefox
   brew cask install google-chrome
+  brew cask install intellij-idea-ce
   brew cask install iterm2
   brew cask install java
   brew cask install keka
   brew cask install keybase
   brew cask install minecraft
   brew cask install postman
+  brew cask install screen
   brew cask install shiftit
   brew cask install slack
   brew cask install steam
