@@ -16,7 +16,7 @@ brew install borkdude/brew/babashka
 brew install candid82/brew/joker
 brew install clojure
 brew install cmake
-brew install emacs
+
 brew install java
 brew install jq
 brew install maven
@@ -29,6 +29,7 @@ brew install zsh
 
 # Install OS specific packages
 if [[ $OS_LINUX ]]; then
+  brew install emacs
   brew install python
 
 elif [[ $OS_MAC ]]; then
@@ -36,6 +37,7 @@ elif [[ $OS_MAC ]]; then
   brew install cocoapods
   brew install github/gh/gh
   brew install libtool
+  brew install overmind
   brew install python3
 
   brew cask install 1password
@@ -59,6 +61,9 @@ elif [[ $OS_MAC ]]; then
   brew cask install telegram
   brew cask install visual-studio-code
   brew cask install zoomus
+
+  brew tap d12frosted/emacs-plus
+  brew install emacs-plus@28 --with-xwidgets --with-no-titlebar
 
   brew tap homebrew/cask-drivers
   brew cask install logitech-options
