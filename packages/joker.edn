@@ -1,2 +1,0 @@
-{:known-macros [helix.core/defnc
-                [serverless.core.async/go-try [catch]]]}

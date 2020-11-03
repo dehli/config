@@ -12,8 +12,8 @@ fi
 brew update
 
 # Install common packages
+brew install gcc
 brew install borkdude/brew/babashka
-brew install candid82/brew/joker
 brew install clojure
 brew install cmake
 
