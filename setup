@@ -6,7 +6,13 @@ if [[ "$0" != "./setup" ]]; then
   exit 1
 fi
 
-# Sets up the symbolic links
+# Setup .zshrc
+if [[ -z "${CONFIG_HOME}" ]]; then
+  echo "export CONFIG_HOME=$PWD && source \$CONFIG_HOME/shell/rc" >> ~/.zshrc
+  source ~/.zshrc
+fi
+
+# Sets up symbolic links
 SUBMODULES=$PWD/submodules
 
 link() {
@@ -16,7 +22,10 @@ link() {
 
 link $SUBMODULES/.emacs.d/ ~/.emacs.d
 link $PWD/tmux.conf ~/.tmux.conf
-link $PWD/packages/iTerm/profiles.json "$HOME/Library/Application Support/iTerm2/DynamicProfiles/profiles.json"
+
+if [[ $OS_MAC ]]; then
+  link $PWD/packages/iTerm/profiles.json "$HOME/Library/Application Support/iTerm2/DynamicProfiles/profiles.json"
+fi
 
 # Git configuration
 git config --global core.excludesfile $PWD/.gitignore_global
@@ -24,4 +33,4 @@ git config --global alias.co "checkout"
 git config --global alias.lola "log --graph --decorate --oneline --all"
 git config --global alias.st "status"
 git config --global user.name "Christian Paul Dehli"
-git config --global user.email github@deh.li
+git config --global user.email git@deh.li
