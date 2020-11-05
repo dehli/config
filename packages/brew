@@ -9,6 +9,7 @@ brew update
 
 # Install common packages
 brew install borkdude/brew/babashka
+brew install borkdude/brew/clj-kondo
 brew install clojure
 brew install cmake
 brew install java
