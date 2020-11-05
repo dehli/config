@@ -41,7 +41,6 @@ elif [[ $OS_MAC ]]; then
   brew cask install epic-games
   brew cask install firefox
   brew cask install google-chrome
-  brew cask install intellij-idea-ce
   brew cask install iterm2
   brew cask install java
   brew cask install keka
@@ -54,7 +53,6 @@ elif [[ $OS_MAC ]]; then
   brew cask install steam
   brew cask install tableplus
   brew cask install telegram
-  brew cask install visual-studio-code
   brew cask install zoomus
 
   brew tap d12frosted/emacs-plus
