@@ -20,11 +20,16 @@ link() {
   ln -sf "$1" "$2"
 }
 
+# Initialize the submodules
+git submodule init
+git submodule update --recursive
+
 link $SUBMODULES/.emacs.d/ ~/.emacs.d
 link $PWD/tmux.conf ~/.tmux.conf
 
 if [[ $OS_MAC ]]; then
-  link $PWD/packages/iTerm/profiles.json "$HOME/Library/Application Support/iTerm2/DynamicProfiles/profiles.json"
+  link $PWD/packages/iTerm/profiles.json \
+       "$HOME/Library/Application Support/iTerm2/DynamicProfiles/profiles.json"
 fi
 
 # Git configuration
