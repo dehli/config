@@ -11,7 +11,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export ZSH_THEME="robbyrussell"
 export ENABLE_CORRECTION="true"
 export COMPLETION_WAITING_DOTS="true"
-export plugins=(aws git)
+export plugins=(aws git git-auto-fetch)
 
 # Operating system
 uname="$(uname)"
