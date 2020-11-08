@@ -12,21 +12,12 @@ if [[ -z "${CONFIG_HOME}" ]]; then
   source ~/.zshrc
 fi
 
-# Sets up symbolic links
-SUBMODULES=$PWD/submodules
-
 link() {
   rm -rf "$2"
   ln -sf "$1" "$2"
 }
 
-# Initialize the submodules
-git submodule init
-git submodule update --recursive
-
-link $SUBMODULES/.emacs.d/ ~/.emacs.d
 link $PWD/tmux.conf ~/.tmux.conf
-
 if [[ $OS_MAC ]]; then
   link $PWD/packages/iTerm/profiles.json \
        "$HOME/Library/Application Support/iTerm2/DynamicProfiles/profiles.json"
