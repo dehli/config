@@ -12,7 +12,6 @@ brew install borkdude/brew/babashka
 brew install borkdude/brew/clj-kondo
 brew install clojure
 brew install cmake
-brew install emacs
 brew install java
 brew install jq
 brew install maven
@@ -24,6 +23,7 @@ brew install wget
 
 # Install OS specific packages
 if [[ $OS_LINUX ]]; then
+  brew install emacs
   brew install python
 
 elif [[ $OS_MAC ]]; then
@@ -44,6 +44,7 @@ elif [[ $OS_MAC ]]; then
   brew cask install keka
   brew cask install keybase
   brew cask install postman
+  brew cask install quicksilver
   brew cask install screen
   brew cask install shiftit
   brew cask install slack
@@ -58,4 +59,7 @@ elif [[ $OS_MAC ]]; then
   brew tap homebrew/cask-fonts
   brew cask install font-hack
   brew cask install font-fira-code
+
+  brew tap d12frosted/emacs-plus
+  brew install emacs-plus@28 --with-no-titlebar --with-xwidgets
 fi

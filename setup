@@ -18,11 +18,6 @@ link() {
 }
 
 link $PWD/tmux.conf ~/.tmux.conf
-if [[ $OS_MAC ]]; then
-  link $PWD/packages/iTerm/profiles.json \
-       "$HOME/Library/Application Support/iTerm2/DynamicProfiles/profiles.json"
-fi
-
 link $PWD/.agignore ~/.agignore
 
 # Git configuration
