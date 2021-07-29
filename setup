@@ -28,3 +28,4 @@ git config --global alias.st "status"
 git config --global user.name "Christian Paul Dehli"
 git config --global user.email cp@deh.li
 git config --global commit.gpgsign true
+git config --global user.signingkey A6BAD755FA636BC4
