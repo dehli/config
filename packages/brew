@@ -16,6 +16,8 @@ brew install java
 brew install jq
 brew install maven
 brew install node
+brew install pass
+brew install pass-otp
 brew install pipenv
 brew install the_silver_searcher
 brew install tmux
