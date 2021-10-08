@@ -19,4 +19,5 @@ if [ $uname = "Linux" ]; then
    export OS_LINUX=true
 elif [ $uname = "Darwin" ]; then
    export OS_MAC=true
+   export PINENTRY_USER_DATA="USE_CURSES=1"
 fi
