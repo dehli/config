@@ -1,3 +1,4 @@
+alias pass="nocorrect pass"
 alias emacs="emacs -nw"
 
 if [ $OS_LINUX ]; then
