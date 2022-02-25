@@ -1,3 +1,7 @@
+#!/usr/bin/env zsh
+
+export CONFIG_HOME=$(dirname "$0")
+
 source $CONFIG_HOME/shell/environment_variables
 source $CONFIG_HOME/shell/aliases
 source $ZSH/oh-my-zsh.sh

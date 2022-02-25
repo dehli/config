@@ -6,6 +6,9 @@ export AWS_DEFAULT_REGION=$AWS_REGION
 export EDITOR="emacs -nw"
 export VISUAL="emacs -nw"
 
+# PATH configuration
+export PATH=$PATH:$CONFIG_HOME/bin
+
 # ZSH Configuration
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_THEME="robbyrussell"

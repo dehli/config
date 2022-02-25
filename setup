@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Warning: This script will override files!
 if [[ "$0" != "./setup" ]]; then

@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+cd $CONFIG_HOME/cli
+bb -m dev.dehli.cli.main $@
