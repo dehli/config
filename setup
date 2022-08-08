@@ -17,7 +17,6 @@ link() {
   ln -sf "$1" "$2"
 }
 
-link $PWD/tmux.conf ~/.tmux.conf
 link $PWD/.agignore ~/.agignore
 
 # Git configuration
