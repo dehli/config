@@ -1,1 +1,3 @@
+sudo apt-get install build-essential
+sudo apt-get install guake
 sudo apt-get install wl-clipboard

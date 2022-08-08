@@ -17,7 +17,6 @@ export plugins=(aws git git-auto-fetch nvm)
 uname="$(uname)"
 if [ $uname = "Linux" ]; then
    export OS_LINUX=true
-   export TERM=xterm-24bit
    export GPG_TTY=$(tty)
 elif [ $uname = "Darwin" ]; then
    export OS_MAC=true

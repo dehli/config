@@ -5,30 +5,34 @@ if ! [ -x "$(command -v brew)" ]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
+# Add homebrew to PATH
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.zshrc
+source ~/.zshrc
+
 brew update
+
+# Install pre-reqs
+brew install cmake
+brew install gcc
+brew install gcc@5
+brew install make
 
 # Install common packages
 brew install borkdude/brew/babashka
 brew install borkdude/brew/clj-kondo
 brew install clojure
-brew install cmake
 brew install java
 brew install jq
-brew install maven
 brew install node
 brew install pass
 brew install pass-otp
-brew install pipenv
 brew install the_silver_searcher
 brew install zsh
 
 # Install OS specific packages
 if [[ $OS_LINUX ]]; then
   brew install emacs
-  brew install gcc
-  brew install make
   brew install python
-  brew install sassc
 
 elif [[ $OS_MAC ]]; then
   brew install awscli
