@@ -23,6 +23,7 @@ brew install borkdude/brew/clj-kondo
 brew install clojure
 brew install java
 brew install jq
+brew install git-delta
 brew install node
 brew install pass
 brew install pass-otp
