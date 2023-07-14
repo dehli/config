@@ -3,21 +3,14 @@
 # Install brew
 if ! [ -x "$(command -v brew)" ]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  echo "Ensure brew is setup properly!"
+  exit 0
 fi
-
-# Add homebrew to PATH
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.zshrc
-source ~/.zshrc
 
 brew update
 
-# Install pre-reqs
-brew install cmake
-brew install gcc
-brew install gcc@5
-brew install make
-
 # Install common packages
+brew install cmake
 brew install borkdude/brew/babashka
 brew install borkdude/brew/clj-kondo
 brew install clojure
@@ -28,47 +21,34 @@ brew install node
 brew install pass
 brew install pass-otp
 brew install the_silver_searcher
-brew install zsh
 
 # Install OS specific packages
 if [[ $OS_LINUX ]]; then
   brew install emacs
   brew install python
+  brew install zsh
 
 elif [[ $OS_MAC ]]; then
   brew install awscli
   brew install cocoapods
   brew install github/gh/gh
-  brew install libtool
-  brew install overmind
-  brew install python3
 
   brew install --cask gpg-suite-no-mail
   brew install --cask 1password
   brew install --cask docker
-  brew install --cask epic-games
-  brew install --cask firefox
   brew install --cask google-chrome
   brew install --cask iterm2
   brew install --cask keka
   brew install --cask keybase
-  brew install --cask postman
-  brew install --cask quicksilver
-  brew install --cask screen
-  brew install --cask shiftit
+  brew install --cask rectangle
   brew install --cask slack
-  brew install --cask steam
-  brew install --cask tableplus
   brew install --cask telegram
-  brew install --cask zoomus
-
-  brew tap homebrew/cask-drivers
-  brew install --cask logitech-options
+  brew install --cask zoom
 
   brew tap homebrew/cask-fonts
   brew install --cask font-hack
   brew install --cask font-fira-code
 
   brew tap d12frosted/emacs-plus
-  brew install emacs-plus@28 --with-no-titlebar --with-xwidgets
+  brew install emacs-plus@30 --with-xwidgets --with-imagemagick --with-native-comp
 fi
