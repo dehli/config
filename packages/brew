@@ -17,6 +17,7 @@ brew install clojure
 brew install java
 brew install jq
 brew install git-delta
+brew install git-lfs
 brew install node
 brew install pass
 brew install pass-otp
