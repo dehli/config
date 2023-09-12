@@ -1,5 +1,6 @@
 *~ # Emacs temp files
 .DS_Store
+.dir-locals.el
 .projectile
 .lsp/
 .vscode/
