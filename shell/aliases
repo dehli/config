@@ -1,5 +1,6 @@
 alias pass="nocorrect pass"
 alias emacs="emacs -nw"
+alias killport='f() { lsof -ti :$1 | xargs kill -9; }; f'
 
 if [ $OS_LINUX ]; then
    alias pbcopy="xclip -selection clipboard"
